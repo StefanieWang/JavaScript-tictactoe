@@ -1,0 +1,164 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 30px;
+	color: #fff;
+}
+
+.hidden {
+	display: none;
+}
+
+.clearfix:after {
+	content: "";
+	display:block;
+	clear: both;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 34px;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+.container {
+	width: 600px;
+	height: 400px;
+	padding: 25px;
+	margin: 50px auto;
+	background: #3d3d3d;
+	background: url("image/green-chalkboard.jpg") no-repeat;
+	background-size: cover;
+    box-shadow: 10px 10px 15px gray;
+    border-radius: 20px;
+}
+
+.game-board {
+	position: relative;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 300px;			
+	/*background: url("image/frame.png") no-repeat;
+	background-size: 300px 300px;*/
+
+}
+
+#game-board-canvas {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: 0;
+	left: 0;
+}
+.squares {
+	width: 300px;
+	height: 300px;
+}
+.square {
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid white;
+	font-size: 40px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.highlight{
+	background: yellow;
+}
+
+.game-over-message {
+	position: absolute;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	font-size: 36px;
+}
+
+.game-control {
+	float: right;
+	width: 200px;
+	margin-top: 10px;
+}
+/*======AI not working now==*/
+.game-q1 .choice .one-player {
+	pointer-events: none;
+}
+
+.choice {
+	margin-top: 25px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.choice div {
+	margin-bottom: 25px;
+	cursor: pointer;
+	color: #d3d3d3;
+}
+
+.choice div:hover {
+	border: 1px dotted #d3d3d3;
+	color: #fff;
+	border-radius: 15px;
+}
+
+.choice .x,
+.choice .o {
+	display: inline-block;
+	margin-right: 35px;
+	font-size: 40px;
+	line-height: 0.8;
+	padding: 10px;
+}
+
+.choice .x:hover,
+.choice .o:hover {
+   border-radius: 20px;
+
+}
+
+.back {
+	margin-top: -15px;
+	font-size: 22px;
+}
+
+.game-points div {
+	margin-top: 30px;
+}
+
+.reset {
+	cursor: pointer;
+	color: #d3d3d3;
+}
+
+.currentPlayer {
+	font-size: 26px;
+}
+
+.reset:hover {
+	border: 1px dotted #d3d3d3;
+	color: #fff;
+	border-radius: 15px;
+}
