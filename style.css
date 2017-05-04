@@ -101,10 +101,10 @@ h3 {
 	width: 200px;
 	margin-top: 10px;
 }
-/*======AI not working now==*/
+/*======AI not working now==
 .game-q1 .choice .one-player {
 	pointer-events: none;
-}
+}*/
 
 .choice {
 	margin-top: 25px;
