@@ -250,11 +250,14 @@ var tictactoe = {
 	},
 
 	generateGameOverMessage: function(){
+		var player2name = $(".player2 .name").html();
+        var player1name = $(".player1 .name").html();
+
 		if(this.player === this.player1){
-            this.gameOverMessage = "Player one wins!"
+            this.gameOverMessage = player1name + "win!"
         }else {
-            this.gameOverMessage = "Player two wins!"
-        }
+            this.gameOverMessage = player2name + "win!"
+        };
 
 	},
 
