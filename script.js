@@ -4,25 +4,6 @@ function Player(mark){
 	this.score = 0;
 };
 
-/*var canvasDraw = function(){
-	var CANVAS = document.getElementById("game-board-canvas");
-	var ctx = CANVAS.getContext("2d");
-
-	ctx.beginPath();
-	ctx.moveTo(100, 25);
-	ctx.lineTo(100, 275);
-	ctx.moveTo(200, 25);
-	ctx.lineTo(200, 275);
-	ctx.moveTo(25, 100);
-	ctx.lineTo(275, 100);
-	ctx.moveTo(25, 200);
-	ctx.lineTo(275, 200);
-	ctx.strokeStyle = "#fff";
-	ctx.lineWidth = 5;
-	ctx.stroke();
-
-};*/
-
 var tictactoe = {
 	winCombos: [[0,1,2],
 	            [3,4,5],
